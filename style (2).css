@@ -1,0 +1,100 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px; /* Increased base font size for better readability */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px; /* Slightly increased margin for better visual separation */
+    font-size: 24px; /* Larger font size for headings */
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px; /* Slightly larger padding for better touch interaction */
+    margin-bottom: 15px;
+    border: 2px solid #ccc; /* Slightly thicker border with more neutral color */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type=text]:focus, textarea:focus {
+    border-color: #007bff; /* Highlight focus with primary color */
+    outline: none; /* Remove default focus outline */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px; /* Increased padding for a larger clickable area */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#nameList {
+    margin-top: 20px;
+    border: 2px solid #ccc; /* Slightly thicker border with more neutral color */
+    border-radius: 5px;
+    background-color: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.name-item {
+    padding: 12px; /* Increased padding for better readability */
+    border-bottom: 2px solid #eee; /* Slightly thicker border for separation */
+    cursor: pointer;
+}
+
+.name-item:last-child {
+    border-bottom: none;
+}
+
+.name-item.selected, .name-item:hover {
+    background-color: #e9ecef;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 22px; /* Slightly increased font size for emphasis */
+    color: #007bff;
+}
+
+/* Highlight selected name with a more distinct color */
+.name-item.selected {
+    background-color: #fffd54; /* Brighter yellow for better visibility */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 12px 0; /* Adjust padding for a better mobile experience */
+    }
+}
+
+#nameList div.selected {
+    background-color: lightblue;
+}

@@ -1,0 +1,89 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Updated font for a modern look */
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Specific styles for login and sign up forms */
+.auth-form {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for modern feel */
+    width: 100%;
+    max-width: 400px; /* Optimal width for forms */
+    font-size: 16px; /* Base font size */
+    color: #333;
+}
+
+.auth-form h2 {
+    font-size: 24px; /* Larger font size for headings */
+    color: #333;
+    margin-bottom: 20px; /* Space below headings */
+    text-align: center;
+}
+
+.auth-form input[type="text"], .auth-form textarea, .auth-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px; /* Text size within inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 2px solid #ccc; /* Neutral, thicker border */
+    border-radius: 5px; /* Rounded borders for inputs */
+    transition: border 0.3s; /* Smooth transition for focus */
+}
+
+.auth-form input[type="text"]:focus, .auth-form input[type="password"]:focus, .auth-form textarea:focus {
+    border-color: #0056b3; /* Blue border on focus */
+    outline: none; /* Removing default outline */
+}
+
+.auth-form button {
+    width: 100%; /* Full width buttons */
+    padding: 12px 0; /* Padding for better touch interaction */
+    font-size: 16px; /* Text size on buttons */
+    background-color: #0056b3; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners on buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Color transition on hover */
+}
+
+.auth-form button:hover {
+    background-color: #003580; /* Darker blue on hover */
+}
+
+.auth-form .error-message, .auth-form .help-text {
+    font-size: 14px; /* Smaller text for messages */
+    color: #d9534f; /* Red text for errors */
+    text-align: center; /* Centered text */
+    margin-bottom: 10px; /* Space below messages */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Smaller padding in smaller screens */
+    }
+
+    .auth-form {
+        padding: 20px; /* Reduced padding for forms on mobile */
+    }
+
+    .auth-form button {
+        margin-bottom: 10px; /* Space below buttons on mobile */
+        padding: 12px 0; /* Adjusted padding for better mobile experience */
+    }
+}
